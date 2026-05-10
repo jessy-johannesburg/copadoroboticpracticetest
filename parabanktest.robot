@@ -4,6 +4,8 @@ Suite Setup            OpenBrowser                 about:blank       chrome
 
 *** Variables ***
 ${PARABANK_URL}        https://parabank.parasoft.com/parabank/index.htm
+${USERNAME}            copadouser1 
+${PASSWORD}            copadouser3
 
 *** Test Cases ***
 Login to Parabank Application
@@ -27,13 +29,13 @@ Login to Parabank Application
     ClickText          REGISTER                    anchor=Confirm
 
 Opening New Account
+   Login To Parabank
    ClickText           Open New Account
-
-
+   
 
 *** Keywords ***
-Login To Application
-    OpenBrowser    ${PARABANK_URL}    chrome
-    TypeText       Username    copadouser1
-    TypeSecret     Password    copadouser3
-    ClickText      Login
+Login To Parabank
+    GoTo               ${PARABANK_URL}
+    TypeText           Username         ${USERNAME}
+    TypeSecret         Password         ${PASSWORD}
+    ClickText          LOG IN
