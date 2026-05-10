@@ -41,7 +41,7 @@ Login To Parabank
     GoTo               ${PARABANK_URL}
     VerifyText         Customer Login
     TypeText           Username       ${BANK_USERNAME}    anchor=Customer Login
-    Sleep              15s
+    Sleep              10s
     TypeText           Password       ${BANK_PASSWORD}    anchor=LOG IN
-    Sleep              15s
+    Sleep              10s
     ClickText          LOG IN         anchor=Forgot login info?
