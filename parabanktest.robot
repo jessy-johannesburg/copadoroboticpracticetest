@@ -34,7 +34,7 @@ Login to Parabank Application
 Opening New Account
     Login To Parabank
     Sleep              10s
-    ClickText          Open New Account    anchor=Account Services
+    ClickText         Forgot login info?    Forgot login info?
 
 *** Keywords ***
 Login To Parabank
@@ -42,5 +42,5 @@ Login To Parabank
     VerifyText         Customer Login
     TypeText           Username       ${BANK_USERNAME}    
     VerifyText         Password
-    TypeText           Password       ${BANK_PASSWORD}    anchor=Password
+    TypeText           Password       ${BANK_PASSWORD}    anchor=LOG IN
     ClickText          LOG IN         anchor=Forgot login info?
