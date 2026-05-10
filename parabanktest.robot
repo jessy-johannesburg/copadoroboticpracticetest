@@ -4,7 +4,7 @@ Suite Setup            OpenBrowser                 about:blank                ch
 
 *** Variables ***
 ${PARABANK_URL}        https://parabank.parasoft.com/parabank/index.htm
-${BANK_USERNAME}       copadouser04
+${BANK_USERNAME}       copadouser05
 ${BANK_PASSWORD}       copadouser03
 
 *** Test Cases ***
@@ -30,7 +30,7 @@ Login to Parabank Application
     ClickText          REGISTER                    anchor=Confirm
 
 Opening New Account
-      [Tags]           smoke
+    [Tags]             smoke
     ClickText          Open New Account            anchor=Account Services
     DropDown           type                        SAVINGS
     DropDown           type                        CHECKING
@@ -41,4 +41,3 @@ Opening New Account
     DropDown           month                       February
     DropDown           transactionType             Credit
     ClickText          Go
-    
