@@ -37,4 +37,8 @@ Opening New Account
     DropDown           type                        SAVINGS
     ClickText          OPEN NEW ACCOUNT            anchor=Log Out
     VerifyText         Congratulations
+    ClickItem          newAccountId
+    DropDown           month                       February
+    DropDown           transactionType             Credit
+    ClickText          Go
     
