@@ -26,3 +26,14 @@ Login to Parabank Application
     Typetext           Confirm                     copadouser3
     ClickText          REGISTER                    anchor=Confirm
 
+Opening New Account
+   ClickText           Open New Account
+
+
+
+*** Keywords ***
+Login To Application
+    OpenBrowser    ${PARABANK_URL}    chrome
+    TypeText       Username    copadouser1
+    TypeSecret     Password    copadouser3
+    ClickText      Login
