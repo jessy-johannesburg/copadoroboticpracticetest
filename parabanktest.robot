@@ -23,5 +23,5 @@ Login to Parabank Application
     TypeText           SSN                         456123365655
     TypeText           Username                    copadouser        anchor=SSN
     TypeText           Password                    copadouser1       anchor=Confirm
-    Typetext           Confirm                     copadouser2
+    Typetext           Confirm                     copadouser1
     ClickText          REGISTER                    anchor=Confirm
