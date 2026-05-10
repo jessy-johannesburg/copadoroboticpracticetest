@@ -21,7 +21,8 @@ Login to Parabank Application
     TypeText           Zip Code                    1686
     TypeText           Phone                       0658923455
     TypeText           SSN                         456123365655
-    TypeText           Username                    copadouser        anchor=SSN
-    TypeText           Password                    copadouser1       anchor=Confirm
-    Typetext           Confirm                     copadouser1
+    TypeText           Username                    copadouser1        anchor=SSN
+    TypeText           Password                    copadouser3       anchor=Confirm
+    Typetext           Confirm                     copadouser3
     ClickText          REGISTER                    anchor=Confirm
+
