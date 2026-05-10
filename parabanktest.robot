@@ -4,8 +4,8 @@ Suite Setup            OpenBrowser    about:blank    chrome
 
 *** Variables ***
 ${PARABANK_URL}        https://parabank.parasoft.com/parabank/index.htm
-${USERNAME}            copadouser1
-${PASSWORD}            copadouser3
+${BANK_USERNAME}            copadouser1
+${BANK_PASSWORD}            copadouser3
 
 *** Test Cases ***
 Login to Parabank Application
@@ -25,9 +25,9 @@ Login to Parabank Application
     TypeText           Phone          0658923455
     TypeText           SSN            456123365655
 
-    TypeText           Username       ${USERNAME}    anchor=SSN
-    TypeText           Password       ${PASSWORD}    anchor=Confirm
-    TypeText           Confirm        ${PASSWORD}
+    TypeText           Username       ${BANK_USERNAME}    anchor=SSN
+    TypeText           Password       ${BANK_PASSWORD}    anchor=Confirm
+    TypeText           Confirm        ${BANK_PASSWORD}
 
     ClickText          REGISTER       anchor=Confirm
 
@@ -40,8 +40,8 @@ Opening New Account
 Login To Parabank
     GoTo               ${PARABANK_URL}
     VerifyText         Customer Login
-    TypeText           Username       ${USERNAME}    anchor=Customer Login
+    TypeText           Username       ${BANK_USERNAME}    anchor=Customer Login
     Sleep              15s
-    TypeText           Password       ${PASSWORD}    anchor=Customer Login
+    TypeText           Password       ${BANK_PASSWORD}    anchor=Customer Login
     Sleep              15s
     ClickText          LOG IN         anchor=Forgot login info?
