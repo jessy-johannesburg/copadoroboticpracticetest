@@ -42,4 +42,4 @@ Login To Parabank
     VerifyText         Customer Login
     TypeText           Username       ${USERNAME}    anchor=Customer Login
     TypeText           Password       ${PASSWORD}    anchor=Customer Login
-    ClickText          LOG IN
+    ClickText          LOG IN         anchor=Forgot login info?
