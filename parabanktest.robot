@@ -38,6 +38,7 @@ Opening New Account
 *** Keywords ***
 Login To Parabank
     GoTo               ${PARABANK_URL}
-    TypeText           Username       ${USERNAME}
-    TypeSecret         Password       ${PASSWORD}
+    VerifyText         Customer Login
+    TypeText           Username       ${USERNAME}    anchor=Customer Login
+    TypeText           Password       ${PASSWORD}    anchor=Customer Login
     ClickText          LOG IN
