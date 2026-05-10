@@ -33,6 +33,7 @@ Login to Parabank Application
 
 Opening New Account
     Login To Parabank
+    VerifyText         Open New Account
     ClickText          Open New Account
 
 *** Keywords ***
