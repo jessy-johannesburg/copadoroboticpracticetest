@@ -30,7 +30,9 @@ Login to Parabank Application
     ClickText          REGISTER                    anchor=Confirm
 
 Opening New Account
-    [Tags]             smoke
+    [Documentation]    This test case to Open new Account
+    [Tags]             sanity
+    Login To Parabank
     ClickText          Open New Account            anchor=Account Services
     DropDown           type                        SAVINGS
     DropDown           type                        CHECKING
@@ -41,3 +43,12 @@ Opening New Account
     DropDown           month                       February
     DropDown           transactionType             Credit
     ClickText          Go
+
+*** Keywords ***
+Login To Parabank
+    GoTo                 ${PARABANK_URL}
+    VerifyText           Customer Login
+    TypeText             Username                    ${BANK_USERNAME}            anchor=Customer Login
+    VerifyText           Password
+    TypeText             Password                    ${BANK_PASSWORD}            anchor=LOG IN
+    ClickText            LOG IN        
