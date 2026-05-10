@@ -34,8 +34,7 @@ Login to Parabank Application
 Opening New Account
     Login To Parabank
     Sleep              15s
-    VerifyText         Open New Account
-    ClickText          Open New Account
+    ClickText          Open New Account    anchor=Account Services
 
 *** Keywords ***
 Login To Parabank
