@@ -40,6 +40,7 @@ Opening New Account
 Login To Parabank
     GoTo               ${PARABANK_URL}
     VerifyText         Customer Login
-    TypeText           Username       ${BANK_USERNAME}    anchor=Username
+    TypeText           Username       ${BANK_USERNAME}    
+    VerifyText         Password
     TypeText           Password       ${BANK_PASSWORD}    anchor=Password
     ClickText          LOG IN         anchor=Forgot login info?
