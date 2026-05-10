@@ -30,5 +30,11 @@ Login to Parabank Application
     ClickText          REGISTER                    anchor=Confirm
 
 Opening New Account
+      [Tags]           smoke
     ClickText          Open New Account            anchor=Account Services
     DropDown           type                        SAVINGS
+    DropDown           type                        CHECKING
+    DropDown           type                        SAVINGS
+    ClickText          OPEN NEW ACCOUNT            anchor=Log Out
+    VerifyText         Congratulations
+    
