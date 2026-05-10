@@ -40,8 +40,8 @@ Opening New Account
 Login To Parabank
     GoTo               ${PARABANK_URL}
     VerifyText         Customer Login
-    TypeText           Username       ${BANK_USERNAME}    anchor=Customer Login
+    TypeText           Username       ${BANK_USERNAME}    anchor=Username
     Sleep              10s
-    TypeText           Password       ${BANK_PASSWORD}    anchor=LOG IN
+    TypeText           Password       ${BANK_PASSWORD}    anchor=Password
     Sleep              10s
     ClickText          LOG IN         anchor=Forgot login info?
