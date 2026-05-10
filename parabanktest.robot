@@ -4,8 +4,8 @@ Suite Setup              OpenBrowser                 about:blank                
 
 *** Variables ***
 ${PARABANK_URL}          https://parabank.parasoft.com/parabank/index.htm
-${BANK_USERNAME}         copadouser1
-${BANK_PASSWORD}         copadouser3
+${BANK_USERNAME}         copadouser01
+${BANK_PASSWORD}         copadouser03
 
 *** Test Cases ***
 Login to Parabank Application
@@ -30,14 +30,5 @@ Login to Parabank Application
     ClickText            REGISTER                    anchor=Confirm
 
 Opening New Account
-    Login To Parabank
     ClickText            Open New Account            anchor=Account Services
 
-*** Keywords ***
-Login To Parabank
-    GoTo                 ${PARABANK_URL}
-    VerifyText           Customer Login
-    TypeText             Username                    ${BANK_USERNAME}            anchor=Customer Login
-    VerifyText           Password
-    TypeText             Password                    ${BANK_PASSWORD}            anchor=LOG IN
-    ClickText            LOG IN                      anchor=Forgot login info?
