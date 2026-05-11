@@ -51,5 +51,5 @@ Login To Parabank
     ClickText            Username
     TypeText             Username                    ${BANK_USERNAME}           anchor=Customer Login
     ClickText            Password
-    TypeSecret           Password                    ${BANK_PASSWORD}           
+    TypeSecret           Password                    ${BANK_PASSWORD}           anchor=1
     ClickText            LOG IN
