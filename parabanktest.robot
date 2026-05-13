@@ -52,6 +52,5 @@ Login To Parabank
     Sleep                10s
     VerifyText           Password
     # ClickElement       xpath=//input[@name='password']
-    # TypeText           ${BANK_PASSWORD}
     TypeText             Password                    ${BANK_PASSWORD}           index=2
     ClickText            LOG IN
