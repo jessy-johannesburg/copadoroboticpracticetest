@@ -50,5 +50,6 @@ Login To Parabank
     VerifyText           Customer Login
     TypeText             Username                    ${BANK_USERNAME}           anchor=Customer Login
     VerifyText           Password
-    TypeSecret           Password                    ${BANK_PASSWORD}           
+    TypeText             Password                    ${BANK_PASSWORD}  
+    # TypeSecret           Password                    ${BANK_PASSWORD}           
     ClickText            LOG IN
