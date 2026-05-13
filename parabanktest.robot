@@ -51,7 +51,7 @@ Login To Parabank
     TypeText             Username                    ${BANK_USERNAME}           anchor=Customer Login
     Sleep                10s
     VerifyText           Password
-    # ClickElement         xpath=//input[@name='password']
-    # TypeText             ${BANK_PASSWORD}
-    TypeText              Password                    ${BANK_PASSWORD}          index=2
+    # ClickElement       xpath=//input[@name='password']
+    # TypeText           ${BANK_PASSWORD}
+    TypeText             Password                    ${BANK_PASSWORD}           index=2
     ClickText            LOG IN
