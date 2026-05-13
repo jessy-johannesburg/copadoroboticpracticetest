@@ -49,7 +49,9 @@ Login To Parabank
     GoTo                 ${PARABANK_URL}
     VerifyText           Customer Login
     TypeText             Username                    ${BANK_USERNAME}           anchor=Customer Login
+    Sleep                10s
     VerifyText           Password
-    TypeText             Password                    ${BANK_PASSWORD}  
-    # TypeSecret           Password                    ${BANK_PASSWORD}           
+    ClickElement         xpath=//input[@name='password']
+    # TypeText             ${BANK_PASSWORD}
+    TypeText              Password                    ${BANK_PASSWORD}          index=2
     ClickText            LOG IN
