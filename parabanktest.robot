@@ -4,7 +4,7 @@ Suite Setup              OpenBrowser                 about:blank                
 
 *** Variables ***
 ${PARABANK_URL}          https://parabank.parasoft.com/parabank/index.htm
-${BANK_USERNAME}         copadouser06
+${BANK_USERNAME}         copadouser07
 ${BANK_PASSWORD}         copadouser03
 
 *** Test Cases ***
