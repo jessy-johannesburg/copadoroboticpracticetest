@@ -8,26 +8,26 @@ ${BANK_USERNAME}         copadouser08
 ${BANK_PASSWORD}         copadouser04
 
 *** Test Cases ***
-# Login to Parabank Application
-#     [Documentation]      This is login Testcase
-#     [Tags]               smoke
+Login to Parabank Application
+    [Documentation]      This is login Testcase
+    [Tags]               smoke
 
-#     GoTo                 ${PARABANK_URL}
-#     ClickText            Register
-#     VerifyText           Signing up is easy!
+    GoTo                 ${PARABANK_URL}
+    ClickText            Register
+    VerifyText           Signing up is easy!
 
-#     TypeText             First Name                  Copado
-#     TypeText             Last Name                   Traning
-#     TypeText             Address                     Midway mews
-#     TypeText             City                        Johannesburg
-#     TypeText             State                       Gauteng
-#     TypeText             Zip Code                    1686
-#     TypeText             Phone                       0658923455
-#     TypeText             SSN                         456123365655
-#     TypeText             Username                    ${BANK_USERNAME}           anchor=SSN
-#     TypeText             Password                    ${BANK_PASSWORD}           anchor=Confirm
-#     TypeText             Confirm                     ${BANK_PASSWORD}
-#     ClickText            REGISTER                    anchor=Confirm
+    TypeText             First Name                  Copado
+    TypeText             Last Name                   Traning
+    TypeText             Address                     Midway mews
+    TypeText             City                        Johannesburg
+    TypeText             State                       Gauteng
+    TypeText             Zip Code                    1686
+    TypeText             Phone                       0658923455
+    TypeText             SSN                         456123365655
+    TypeText             Username                    ${BANK_USERNAME}           anchor=SSN
+    TypeText             Password                    ${BANK_PASSWORD}           anchor=Confirm
+    TypeText             Confirm                     ${BANK_PASSWORD}
+    ClickText            REGISTER                    anchor=Confirm
 
 Opening New Account
     [Documentation]      This test case to Open new Account
